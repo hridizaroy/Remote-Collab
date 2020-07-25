@@ -1,12 +1,3 @@
-<?php
-
-/*TODO
-***Database of users and who gets to play 
-***Round based on database
-***Temp file to store the game
-*/
-
-//?>
 
 <html>
 <head>
@@ -25,8 +16,6 @@
     <p id = "msg">Please enter word</p>
 
     <script>
-    //Add a 'start round button' and call set function on it when clicked
-    //The button shows only when it's your turn
 
         var timer;
         var word;
@@ -79,7 +68,6 @@
                     //Alt: document.getElementById('wordPrompt').innerHTML = document.getElementById('wordNext').value; (for new prompt = word typed)
                     generateWord();
                     wordList.push(document.getElementById('wordNext').value.toLowerCase());
-                    //Write Code to send this word to server file
 
                     if(timer) {
                         clearInterval(timer);
@@ -121,7 +109,7 @@
 
         function generateWord() {
             var xhttp = new XMLHttpRequest();
-            var url = "genWord.php"; //tried to change page
+            var url = "genWord.php";
             xhttp.open("POST", url, true);
 
             xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
