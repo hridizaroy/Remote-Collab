@@ -63,13 +63,7 @@
 
             var processingInstance = new Processing(canvas, sketchProc); 
 
-            //document.getElementById('send').addEventListener('click', sendImg);
-
-
             function sendImg() {
-
-                //var u8Image  = b64ToUint8Array(canvas.toDataURL('image/jpeg'));
-                //var pic = new Blob([ u8Image ], {type: "image/jpeg"});
 
                 const params = "pic=" + canvas.toDataURL('image/png');
                 console.log(canvas.toDataURL('image/png'));
@@ -84,20 +78,7 @@
                     }
                 };
                 xhttp.send(params);
-            }
-
-
-        /*    function b64ToUint8Array(b64Image) {
-                var img = atob(b64Image.split(',')[1]);
-                var img_buffer = [];
-                var i = 0;
-                while (i < img.length) {
-                    img_buffer.push(img.charCodeAt(i));
-                    i++;
-                }
-                return new Uint8Array(img_buffer);
-            }*/
-            
+            }            
         
         </script>
 
