@@ -1,20 +1,5 @@
 
 <?php
-
-    /*TODO
-    ***Make a new file removing all extras
-    ***Option to Add file/section (folder)
-    ***Put files inside project folders
-    ***Doing from remote database
-    ***Making access exclusive based on login
-    ***User database for each file/folder
-    ***Make username = user's name
-    ***Find out a way to make splitting identifier unique instead of "User: " etc./Make a linked list or new instance of a class for every msg
-    ***Opening chatbox based on access/team/project //Maybe directory name based on project and different directory for in-general team chat
-    */
-    /*Notes
-    ***Remotely update file done
-    */
     
     $file_to_open = $fileDir = $file = $fileContent = $nowOpen = "";
 
